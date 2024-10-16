@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev:server": "nodemon server/server.js",
-    "dev:client": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*.*' --no-open --no-notify",
-    "dev": "concurrently \"pnpm run dev:server\" \"pnpm run dev:client\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +16,5 @@
     "@tensorflow/tfjs": "^4.21.0",
     "express": "^4.21.1",
     "three": "^0.169.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^3.0.3",
-    "concurrently": "^9.0.1",
-    "nodemon": "^3.1.7"
   }
 }
